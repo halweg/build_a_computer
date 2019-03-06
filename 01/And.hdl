@@ -1,0 +1,16 @@
+/**   只可以用 Nand门
+ * 
+ * 输出 ：1 条件 a==1 and b==1
+ * 输出 ：0 其他任何情况
+ * 思路 ： Nand(Nand(a，b),Nand(a,b))       
+ */
+
+CHIP And {
+    IN a, b;
+    OUT out;
+
+    PARTS:
+    Nand(a=a,b=b,out=o1);
+    Nand(a=a,b=b,out=o2);
+    Nand(a=o1,b=o2,out=out);
+}
