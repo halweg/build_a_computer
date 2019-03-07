@@ -4,7 +4,7 @@
  * 
  */
 
-CHIP Not {
+CHIP Or {
     IN a,b;
     OUT out;
 
