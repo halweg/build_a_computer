@@ -1,0 +1,16 @@
+/**
+ * 
+ * {a, b} = {in, 0} if sel == 0
+ *          {0, in} if sel == 1
+ */
+
+CHIP DMux {
+    IN in, sel;
+    OUT a, b;
+
+    PARTS:
+	Not(in=sel,out=nsel);
+	And(a=nsel,b=in,out=a);
+	And(a=sel,b=in,out=b);
+
+}
