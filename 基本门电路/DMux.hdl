@@ -2,6 +2,7 @@
  * 
  * {a, b} = {in, 0} if sel == 0
  *          {0, in} if sel == 1
+ * 分路器, sel取非, sel为1时in从b位输出,为0时in从a位输出  out b = sel and in, out a = sel非 and in
  */
 
 CHIP DMux {

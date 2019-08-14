@@ -1,7 +1,7 @@
 /**选择器
  * 
  * if sel = 0 then out = a else out = b
- * 
+ * 选择位 sel 为1输出b,为0输出a, 任何数 与 1 都等于它自己 sel And b, sel非 And 0
  */
 CHIP Mux {
     IN a,b,sel;

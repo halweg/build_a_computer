@@ -1,6 +1,7 @@
 /**
  * 8-way Or: 
  * out = (in[0] or in[1] or ... or in[7])
+ * 8 位输入，任意一位为 1 ,就输出1
  */
 
 CHIP Or8Way {
