@@ -25,6 +25,19 @@
         ADD    R1, foo, j
         LOAD*  R2, R1
         STR    R2, x       //R2->x
+        
+    流程控制
+        高级实现
+        while(R1 > 0) {
+            ......
+        }
+        
+        底层实现
+        BeginWhile
+            JNG R1, EndWhile      //JNG: if R1 < 0 ,JMP EndWhile
+        JMP BeginWhile
+        EndWhile:
+        
 
             
 
