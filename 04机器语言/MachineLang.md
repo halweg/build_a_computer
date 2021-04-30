@@ -12,14 +12,14 @@
     AND R1,R1,R3 
 
     内存访问
-        1:直接寻址         直接给出 memory address 或用标签表示地址
+        1:LOAD          直接给出 memory address 或用标签表示地址
         LOAD R1, 67      //memory address 63里存放的bit加载到R1里
         LOAD R1, bar     //标签 bar 在汇编器阶段终将被替换成地址
         
-        2:立即数寻址       多用于加载常数，直接将字面量load 或 store
+        2:LOADI       多用于加载常数，直接将字面量load 或 store
         LOADI R1, 67     //把字面量 67 load 进R1
         
-        3:间接寻址        指针，数组的寻址办法
+        3:LOAD*        指针，数组的寻址办法
         
         x = foo[j]的表示如下:
         ADD    R1, foo, j
